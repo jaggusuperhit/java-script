@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template Literals</title>
+</head>
+<body>
+<script type="text/javascript">
+    // Define user information
+    const name = "Suraj";
+    const college = "JCOE";
+    const branch = "CSE";
+
+    // Create the HTML structure using template literals
+    const display = `
+        <ul>
+            <li>${name}</li>
+            <li>${college}</li>
+            <li>${branch}</li>
+        </ul>
+    `;
+
+    // Wait for the DOM to load before injecting HTML
+    document.addEventListener('DOMContentLoaded', () => {
+        document.body.innerHTML = display;
+    });
+</script>
+</body>
+</html>
